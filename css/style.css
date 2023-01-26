@@ -37,13 +37,16 @@ img {
 }
 
 .row {
+    padding: 10px;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     gap: 5px;
     row-gap: 10px;
-    width: 90%;
-    height: calc(100vh - 70px);
+    width: 95%;
+    height: calc(100vh - 120px);
+    overflow-x: scroll;
 }
 
 /* _______________
@@ -54,10 +57,9 @@ __________________*/
 
 header {
     height: 30px;
-    margin: 5px 5px;
+    margin: 5px;
     display: flex;
     justify-content: flex-end;
-    align-content: center;
     background-color: black;
     gap: 0.5vw;
 }
@@ -65,8 +67,9 @@ header {
 header>* {
     background-color: rgba(74, 74, 74, 0.6);
     border-radius: 10px;
-    padding: 8px;
+    padding: 5px;
 }
+
 /* _______________
 
 MAIN
@@ -74,7 +77,6 @@ MAIN
 __________________*/
 
 main {
-    padding-top: 30px;
     display: flex;
     justify-content: center;
 }
@@ -99,3 +101,42 @@ main {
 FOOTER
 
 __________________*/
+
+footer {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    height: 80px;
+    background-color: #222222;
+    font-size: 1.5vw;
+    }
+
+footer>* {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 10px;
+}
+
+.icon {
+    text-align: center;
+}
+
+.icon>i {
+    font-size: 2vw;
+    margin: 5px;
+}
+
+.device::after {
+    content: '\2303';
+}
+
+#exit {
+    align-self: flex-end;
+}
+
+#share-screen i{
+    color: green;
+}
