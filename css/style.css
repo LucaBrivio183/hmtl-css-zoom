@@ -40,13 +40,12 @@ img {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;  
     align-content: flex-start;
     gap: 5px;
     row-gap: 10px;
     width: 95%;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 11vh);
     overflow-x: scroll;
 }
 
@@ -57,18 +56,18 @@ HEADER
 __________________*/
 
 header {
-    height: 30px;
-    margin: 5px;
+    height: 3vh;
     display: flex;
     justify-content: flex-end;
-    background-color: black;
-    gap: 0.5vw;
+    align-content: center;
+    gap: 5px;
+    font-size: 1.5vh;
 }
 
 header>* {
     background-color: rgba(74, 74, 74, 0.6);
     border-radius: 10px;
-    padding: 5px;
+    padding: 0.75vh;
 }
 
 /* _______________
@@ -108,16 +107,16 @@ footer {
     align-items: center;
     gap: 20px;
     justify-content: space-between;
-    height: 80px;
+    height: 8vh;
     background-color: #222222;
-    font-size: 1vw;
+    font-size: 2vh;
     }
 
 footer>* {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    gap: 10px;
+    gap: 20px;
     padding: 0 10px;
 }
 
@@ -126,7 +125,7 @@ footer>* {
 }
 
 .icon>i {
-    font-size: 2vw;
+    font-size: 3vh;
     margin: 5px;
 }
 
