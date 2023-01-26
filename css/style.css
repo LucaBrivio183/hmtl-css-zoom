@@ -39,16 +39,19 @@ img {
 .row {
     padding: 10px;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;  
-    align-content: flex-start;
+    justify-content: center;
     gap: 5px;
     row-gap: 10px;
     width: 95%;
-    height: calc(100vh - 11vh);
-    overflow-x: scroll;
+    height: calc(100vh - 11vh - 6px);
+    overflow-y: scroll;
+    
 }
 
+.row::-webkit-scrollbar {
+    display: none;
+}
 /* _______________
 
 HEADER
@@ -62,6 +65,7 @@ header {
     align-content: center;
     gap: 5px;
     font-size: 1.5vh;
+    margin: 3px;
 }
 
 header>* {
