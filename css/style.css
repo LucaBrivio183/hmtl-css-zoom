@@ -31,21 +31,21 @@ a {
 }
 
 img {
+    height: 100%;
     width: 100%;
     display: block;
 }
 
 .row {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 0.3vw;
+    justify-content: center;
+    gap: 5px;
+    row-gap: 10px;
+    width: 90%;
+    height: calc(100vh - 70px);
 }
 
-.big {
-    width: 80%;
-    padding: 10px;
-}
 /* _______________
 
 HEADER
@@ -57,7 +57,7 @@ header {
     margin: 5px 5px;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-content: center;
     background-color: black;
     gap: 0.5vw;
 }
@@ -76,12 +76,16 @@ __________________*/
 main {
     padding-top: 30px;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: center;
 }
-main .video {
+
+
+.video {
+    width: 250px;
+    height: 150px;
     position: relative;
 }
+
 
 .video .name {
     position: absolute;
