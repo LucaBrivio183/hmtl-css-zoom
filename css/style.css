@@ -45,7 +45,7 @@ img {
     row-gap: 10px;
     width: 95%;
     height: calc(100vh - 11vh - 6px);
-    overflow-y: scroll;
+    overflow-x: scroll;
     
 }
 
